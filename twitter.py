@@ -4,7 +4,7 @@ from datetime import datetime
 import rfc3339
 import time
 
-BEARER_TOKEN = 'YOUR TOKEN GOES HERE'
+BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAM2zMgEAAAAAjIFbBetAWCuAzaEL%2B5jSMyofgKE%3DwCGeSfjOYu91nXq0LJiygBheEegg7mU5dhecl2jD2IJIPiwbQI'
 search_url = "https://api.twitter.com/2/tweets/search/all"
 
 
@@ -97,6 +97,7 @@ def full_archive_search(query, sd, ed, next_token):
         return None, None
 
     headers = create_headers(BEARER_TOKEN)
+    query = '(' + query + ')' + ' -is:retweet'
     query_params = {'query': query, 'start_time': start_date, 'end_time': end_date,
                     'tweet.fields': 'author_id,context_annotations,created_at,entities,geo,id,text',
                     'user.fields': 'description', 'next_token':next_token, 'max_results': 500}

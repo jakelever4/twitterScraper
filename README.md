@@ -25,6 +25,7 @@ SETUP
       - Once you have been accepted for an account, go to the developer portal (https://developer.twitter.com/en/portal/dashboard). Create/go to your project -> App Settings -> Keys and Tokens -> Bearer Token and click the button that says regenerate. This will copy your bearer token.
       - Once you have copied your bearer token, open the file twitter.py and replace the variable on line 7 called BEARER_TOKEN = your copied value.
       - For smaller analysis (<= 1,000,000 Tweets), I can supply bearer tokens.
+    - Download this project: This can be done by cloning the Git repository or clicking the green 'Code' button in the top right.
     - Prepare your queries: make sure the CSV query_list is in the correct format with your own queries in.
     
     
