@@ -1,3 +1,4 @@
-QUERY, START_DATE, END_DATE
-"only in america, this would happen", 2016-09-01, 2016-09-19
-"Tom Brady", 2016-03-02, 2016-03-09
+INDEX, QUERY, START_DATE, END_DATE
+1, "reducing greenhouse emissions",2016-09-01, 2016-09-19
+2, Boris Johnson, 2016-03-02, 2016-03-09
+3, "Pfizer", 2019-02-01, 2019-03-12
