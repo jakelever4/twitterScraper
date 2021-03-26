@@ -4,7 +4,7 @@ from datetime import datetime
 import rfc3339
 import time
 
-BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAM2zMgEAAAAAjIFbBetAWCuAzaEL%2B5jSMyofgKE%3DwCGeSfjOYu91nXq0LJiygBheEegg7mU5dhecl2jD2IJIPiwbQI'
+BEARER_TOKEN = 'YOUR TOKEN HERE'
 search_url = "https://api.twitter.com/2/tweets/search/all"
 
 
