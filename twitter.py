@@ -86,10 +86,10 @@ def get_tweets(start_date, end_date, query):
 def full_archive_search(query, sd, ed, next_token):
     now = datetime.now()
     try:
-        start_date = get_rfc33339_date(datetime.strptime(sd, '%Y-%m-%d'))
-        end_date = get_rfc33339_date(datetime.strptime(ed, '%Y-%m-%d'))
-        if datetime.strptime(sd, '%Y-%m-%d') > now or datetime.strptime(ed, '%Y-%m-%d') > now or \
-                datetime.strptime(ed, '%Y-%m-%d') < datetime.strptime(sd, '%Y-%m-%d'):
+        start_date = get_rfc33339_date(datetime.strptime(sd, '%d/%m/%Y'))
+        end_date = get_rfc33339_date(datetime.strptime(ed, '%d/%m/%Y'))
+        if datetime.strptime(sd, '%d/%m/%Y') > now or datetime.strptime(ed, '%d/%m/%Y') > now or \
+                datetime.strptime(ed, '%d/%m/%Y') < datetime.strptime(sd, '%d/%m/%Y'):
             print('invalid date format')
             return None, None
     except:
